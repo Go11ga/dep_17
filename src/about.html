@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/head.html', {})
+</head>
+<body>
+
+    @@include('html/sprite.html', {})
+
+<div class="about">
+    <!-- subheader -->
+    <div class="subheader subheader--about">
+        <div class="container">
+            <div class="subheader__inner">
+                @@include('html/header.html', {})
+                @@include('html/nav.html', {})
+                <h2 class="subheader__title">
+                    О компании
+                </h2>
+                <h3 class="subheader__subtitle">
+                    Более семи лет в дорожном строительстве
+                </h3>
+            </div>
+        </div>
+    </div><!-- /. subheader -->
+
+    <div class="container">
+        <div class="about__container">
+            <div class="about__title">
+                Общество с ограниченной ответственностью «Дорожно-эксплуатационное предприятие №17» ведет свою деятельность с 2014 года.
+            </div>
+            <div class="about__text mt-30">
+                Мы занимается летним и зимним содержанием автомобильных дорог, и выполняем весь комплекс работ по уходу за дорогой, дорожными сооружениями и полосой отвода, по профилактике и устранению постоянно возникающих мелких повреждений, а также по зимнему содержанию и озеленению дорог.
+            </div>
+            
+            <div class="about__stat">
+                <div class="about__item col-6 md-col-12">
+                    <div class="about__digit col-3">
+                        900
+                    </div>
+                    <div class="about__text col-9">
+                        километров дорог федерального и регионального значения находятся на ежегодном содержании
+                    </div>
+                </div>
+                <div class="about__item col-6 md-col-12">
+                    <div class="about__digit col-3">
+                        150
+                    </div>
+                    <div class="about__text col-9">
+                        километров современных асфальтированных дорог разного значения построено только за последний год
+                    </div>
+                </div>
+            </div><!-- /.about__stat -->
+
+            <div class="about__text mt-45">
+                Общество выполняет работы по государственным и муниципальным контрактам, заключенным по результатам проведения электронных аукционов, заказчиками по которым являются:
+            </div>
+
+            <ul class="about__list">
+                <li>
+                    ФКУ «Управление автомобильной магистрали Москва – Нижний Новгород Федерального дорожного агентства»
+                </li>
+                <li>
+                    Департамент дорожного хозяйства и транспорта Ивановской области
+                </li>
+                <li>
+                    УФК по Ивановской области (УЖКХ Администрации города Иванова)
+                </li>
+                <li>
+                    УФК по Ивановской области (УЖКХ Администрации города Иванова)Отдел строительства и архитектуры администрации МО «Родниковский муниципальный район»
+                </li>
+                <li>
+                    Администрация Фурмановского муниципального района Ивановской области
+                </li>
+                <li>
+                    Администрация Комсомольского муниципального района Ивановской области
+                </li>
+                <li>
+                    Администрация Лежневского муниципального района Ивановской области
+                </li>
+                <li>
+                    Администрация Лухского муниципального района Ивановской области
+                </li>
+                <li>
+                    Администрация Приволжского муниципального района Ивановской области
+                </li>
+            </ul>
+
+            <div class="about__gallery">
+                <div class="about__img-wrapper col-2 md-col-6 sm-col-12">
+                    <img class="about__img" src="../images/pages/emblem-01.jpg">
+                </div>
+                <div class="about__img-wrapper col-2 md-col-6 sm-col-12">
+                    <img class="about__img" src="../images/pages/emblem-02.jpg">
+                </div>
+                <div class="about__img-wrapper col-2 md-col-6 sm-col-12">
+                    <img class="about__img" src="../images/pages/emblem-03.jpg">
+                </div>
+            </div>
+
+            <div class="about__text">
+                Предприятие имеет добросовестную деловую репутацию, квалифицированный штат инженерно-технических работников и аттестованных по современным требованиям лаборантов и геодезистов, слаженный коллектив, а также применяет современные производственные методы и технологии.
+            </div>
+        </div><!-- /.about__container -->
+
+        <div class="footer__wrapper footer__wrapper--black">
+            <!-- footer -->
+            @@include('html/footer.html', {})
+        </div>
+
+    </div><!-- /.container -->
+</div><!-- /.about -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>

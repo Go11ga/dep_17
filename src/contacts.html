@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/head.html', {})
+</head>
+<body>
+
+@@include('html/sprite.html', {})
+
+<div class="contacts">
+    <!-- subheader -->
+    <div class="subheader subheader--contacts">
+        <div class="container">
+            <div class="subheader__inner">
+                @@include('html/header.html', {})
+                @@include('html/nav.html', {})
+                <h2 class="subheader__title">
+                    Контакты
+                </h2>
+                <h3 class="subheader__subtitle">
+                    Как нас найти
+                </h3>
+            </div>
+        </div>
+    </div><!-- /. subheader -->
+
+    <div class="container">
+        <div class="contacts__container">
+            <div class="contacts__title">
+                Адрес
+            </div>
+            <div class="contacts__subtitle">
+                153521, Ивановская обл, Ивановский р-н, с. Ново-Талицы, строение 1, в районе ул. Автодоровской
+            </div>
+            <div class="contacts__title">
+                Телефон
+            </div>
+            <div class="contacts__subtitle">
+                <a href="tel:+79158179848">+7 915 817 9848</a>
+            </div>
+            <div class="contacts__title">
+                Электронная почта
+            </div>
+            <div class="contacts__subtitle">
+                <a class="contacts__link" href="mailto:test@test.test">dep-17@mail.ru</a>
+            </div>
+
+            <div class="map">
+                <img class="map__img" src="images/pages/map.jpg">
+            </div>
+        </div><!-- /.contacts__container -->
+
+        <div class="footer__wrapper footer__wrapper--black">
+            <!-- footer -->
+            @@include('html/footer.html', {})
+        </div>
+
+    </div><!-- /.container -->
+</div><!-- /.about -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>

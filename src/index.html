@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/head.html', {})
+</head>
+<body>
+
+    @@include('html/sprite.html', {})
+
+<div class="main">
+    <!-- aux -->
+    <div class="aux">
+        <div class="container">
+            <div class="aux__inner">
+                <!-- showcase -->
+                <div class="showcase flex flex-column flex-center flex-align-center">
+                    <button class="btn btn--showcase btn--showcase--active">
+                        <svg class="showcase__icon">
+                            <use xlink:href="#icon-nav-crown"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn--showcase">
+                        <svg class="showcase__icon">
+                            <use xlink:href="#icon-nav-briefcase"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn--showcase">
+                        <svg class="showcase__icon">
+                            <use xlink:href="#icon-nav-hamlet"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn--showcase">
+                        <svg class="showcase__icon">
+                            <use xlink:href="#icon-nav-dozer"></use>
+                        </svg>
+                    </button>
+                    <button class="btn btn--showcase">
+                        <svg class="showcase__icon">
+                            <use xlink:href="#icon-nav-baloon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slider">
+        <!-- section -->
+        <section class="section section--main">
+            <div class="container">
+                <div class="column wrapper flex-align-center flex-center overflow">
+                    <!-- header -->
+                    @@include('html/header.html', {})
+
+                    <!-- nav -->
+                    @@include('html/nav.html', {})
+
+                    <!-- info -->
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            О компании
+                        </div>
+                        <h2 class="info__title">
+                            Более семи лет <br>
+                            в дорожном строительстве
+                        </h2>
+                        <h3 class="info__subtitle">
+                            Ремонт, содержание, реконструкция и строительство автомобильных <br>
+                            дорог федерального, регионального и муниципального значения и <br>
+                            дорожной инфраструктуры на них. 
+                        </h3>
+                    </div>
+
+                    <!-- scroll -->
+                    <div class="scroll flex flex-column flex-center flex-align-center">
+                        <div class="scroll__text">
+                            прокрутите вниз
+                        </div>
+                        <svg class="scroll__icon">
+                            <use xlink:href="#icon-scroll"></use>
+                        </svg>
+                    </div>
+
+                    <div class="footer__wrapper footer__wrapper--hide">
+                        <!-- footer -->
+                        @@include('html/footer.html', {})
+                    </div>
+
+                </div><!-- /.column -->
+            </div><!-- /.container -->
+        </section>
+
+        <!-- section -->
+        <section class="section section--infrastructure">
+            <div class="container">
+                <div class="column wrapper flex-align-center flex-center overflow">
+                    <!-- info -->
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            Инфраструктура
+                        </div>
+                        <h2 class="info__title">
+                            Развитая <br>
+                            инфраструктура
+                        </h2>
+                        <h3 class="info__subtitle">
+                            Современные производственные базы, лаборатория по испытанию <br>
+                            строительных материалов, а также несколько асфальтовых заводов <br>
+                            и производственных баз в пределах Ивановской области
+                        </h3>
+                    </div>
+                </div><!-- /.column -->
+            </div><!-- /.container -->
+        </section>
+
+        <!-- section -->
+        <section class="section section--team">
+            <div class="container">
+                <div class="column wrapper flex-align-center flex-center overflow">
+                    <!-- info -->
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            Коллектив
+                        </div>
+                        <h2 class="info__title">
+                            Команда <br>
+                            профессионалов
+                        </h2>
+                        <h3 class="info__subtitle">
+                            Квалифицированный штат инженерно-технических <br>
+                            работников и аттестованных по современным <br>
+                            требованиям лаборантов и геодезистов
+                        </h3>
+                    </div>
+                </div><!-- /.column -->
+            </div><!-- /.container -->
+        </section>
+
+        <!-- section -->
+        <section class="section section--technics">
+            <div class="container">
+                <div class="column wrapper flex-align-center flex-center overflow">
+                    <!-- info -->
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            Спецтехника
+                        </div>
+                        <h2 class="info__title">
+                            Собственный парк <br>
+                            дорожной техники
+                        </h2>
+                        <h3 class="info__subtitle">
+                            Создание комфортной и безопасной <br>
+                            структуры автодорог с использованием <br>
+                            инновационных методов строительства
+                        </h3>
+                    </div>
+                </div><!-- /.column -->
+            </div><!-- /.container -->
+        </section>
+
+        <!-- section -->
+        <section class="section section--geography">
+            <div class="container">
+                <div class="column wrapper flex-align-center flex-center overflow">
+                    <!-- info -->
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            География
+                        </div>
+                        <h2 class="info__title">
+                            Наши дороги <br>
+                            в надежных руках
+                        </h2>
+                        <h3 class="info__subtitle">
+                            Более 900 километров дорог федерального и <br>
+                            регионального значения находятся на ежегодном <br>
+                            содержании ООО «ДЭП-17»
+                        </h3>
+                    </div>
+
+                    <div class="footer__wrapper">
+                        <!-- footer -->
+                        @@include('html/footer.html', {})
+                    </div>
+
+                </div><!-- /.column -->
+            </div><!-- /.container -->
+        </section>
+    </div><!-- /#slider -->
+</div><!-- /.main -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>

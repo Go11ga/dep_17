@@ -1,0 +1,43 @@
+@function next_key($name, $map) {
+   $names: map-keys($map);
+   $n: index($names, $name);
+   @return if($n < length($names), nth($names, $n + 1), null);
+}
+
+// max-width
+@each $key, $value in $breakpoints {
+   $next_key: next_key($key, $breakpoints);
+
+   @include breakpoint($key) {
+      @if $next_key {
+         $container: map-get($breakpoints, $next_key);
+
+         .container {
+            max-width: $container;
+         }
+      }
+
+      @for $i from 1 through 12 {
+         .#{$key}-col-#{$i} {
+            width: 8.33333333% * $i;
+         }
+      }
+
+      .#{$key}-hidden {
+         display: none;
+      }
+   }
+}
+
+// min-width
+@each $key, $value in $breakpoints {
+   @include breakpoint-min($key) {
+      .#{$key}-visible {
+         display: none;
+      }
+
+      .#{$key}-flex {
+         display: flex;
+      }
+   }
+}

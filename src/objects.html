@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/head.html', {})
+</head>
+<body>
+
+@@include('html/sprite.html', {})
+
+<div class="objects">
+    <!-- subheader -->
+    <div class="subheader subheader--objects">
+        <div class="container">
+            <div class="subheader__inner">
+                @@include('html/header.html', {})
+                @@include('html/nav.html', {})
+                <h2 class="subheader__title">
+                    Объекты
+                </h2>
+                <h3 class="subheader__subtitle">
+                    900 километров дорог федерального и регионального значения <br>
+                    находятся на ежегодном содержании ООО «ДЭП-17»
+                </h3>
+            </div>
+        </div>
+    </div><!-- /. subheader -->
+
+    <div class="container">
+        <div class="objects__container">
+
+            <!-- filter -->
+            <div class="filter">
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter btn--filter--active">Все</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Стройка</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Ремонт</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Капитальный ремонт</button>
+                </div>
+            </div><!-- /.filter -->
+
+            <div class="objects__gallery">
+                <div class="objects__item objects__item--city-1">
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            Капитальный ремонт
+                        </div>
+                        <div class="info__text">
+                            Иваново – Ярославль
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__item objects__item--city-2">
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            Ремонт
+                        </div>
+                        <div class="info__text">
+                            Ростов – Иваново – Нижний Новгород
+                        </div>
+                    </div>
+                </div>
+                <div class="objects__item objects__item--city-3">
+                    <div class="info flex flex-column flex-center flex-align-center">
+                        <div class="info__about">
+                            О компании
+                        </div>
+                        <div class="info__text">
+                            Ковров – Шуя – Кинешма
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.objects__gallery -->
+
+            <button class="btn btn--full btn--arrow">
+                Показать еще
+                <span>
+                    <svg>
+                        <use xlink:href="#icon-arrow-down"></use>
+                    </svg>
+                </span>
+            </button>
+        </div><!-- /.objects__container -->
+
+        <div class="footer__wrapper footer__wrapper--black">
+            <!-- footer -->
+            @@include('html/footer.html', {})
+        </div>
+
+    </div><!-- /.container -->
+</div><!-- /.objects -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>

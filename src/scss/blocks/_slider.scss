@@ -1,0 +1,67 @@
+.slider {
+   display: flex;
+   position: relative;
+   opacity: 0;
+   transition: opacity 1s ease;
+}
+
+.owl {
+   &-loaded {
+      opacity: 1;
+      display: block;
+   }
+
+   &-stage-outer {
+      position: relative;
+      overflow: hidden;
+   }
+
+   &-stage {
+      display: flex;
+   }
+
+   &-nav.disabled,
+   &-dots.disabled {
+      display: none;
+   }
+
+   &-nav {
+      &-item {
+         width: 30px;
+         height: 30px;
+         border: none;
+         cursor: pointer;
+         position: absolute;
+         z-index: 5;
+      }
+   }
+
+   &-prev {
+      /**/
+   }
+
+   &-next {
+      /**/
+   }
+
+   &-dots {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+
+   &-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin: 0 5px;
+      border: none;
+      cursor: pointer;
+      background-color: #ccc;
+
+      &.active {
+         background-color: #ff0000;
+      }
+   }
+}
+

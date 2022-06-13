@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/head.html', {})
+</head>
+<body>
+
+@@include('html/sprite.html', {})
+
+<div class="technics">
+    <!-- subheader -->
+    <div class="subheader subheader--technics">
+        <div class="container">
+            <div class="subheader__inner">
+                @@include('html/header.html', {})
+                @@include('html/nav.html', {})
+                <h2 class="subheader__title">
+                    Техника
+                </h2>
+                <h3 class="subheader__subtitle">
+                    Собственный парк современной дорожно-строительной <br>
+                    техники и оборудования
+                </h3>
+            </div>
+        </div>
+    </div><!-- /. subheader -->
+
+    <div class="container">
+        <div class="technics__container">
+
+            <!-- filter -->
+            <div class="filter">
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter btn--filter--active">Все</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Асфальтоукладчики</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Автогрейдеры</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Бульдозеры</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Катки</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Экскаваторы</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Погрузчики</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Фрезы</button>
+                </div>
+                <div class="filter__item xs-col-12">
+                    <button class="btn btn--filter">Грузовики</button>
+                </div>
+            </div><!-- /.filter -->
+
+            <div class="technics__gallery">
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-01.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Бульдозер <span>John Deere</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-02.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Экскаватор <span>JCB JS360</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-03.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Асфальтовый каток <span>LiuGong 6212E</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-04.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Автогрейдер <span>John Deere</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-05.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Автогудронатор на базе <span>Kamaz</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-06.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Поливомоечные комплексы <span>Man</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-07.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Асфальтоукладчик <span>Vögele</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-08.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Грузовик <span>Kamaz</span>
+                    </div>
+                </div>
+                <div class="technics__item col-4 md-col-6 xs-col-12">
+                    <button class="btn btn--full">
+                        <img class="technics__img"  src="images/pages/technics-09.jpg">
+                    </button>
+                    <div class="technics__title">
+                        Трактор <span>МТЗ</span>
+                    </div>
+                </div>
+            </div><!-- /.technics__gallery -->
+
+            <button class="btn btn--full btn--arrow mt-20">
+                Показать еще
+                <span>
+                    <svg>
+                        <use xlink:href="#icon-arrow-down"></use>
+                    </svg>
+                </span>
+            </button>
+            
+        </div><!-- /.technics__container -->
+
+        <div class="footer__wrapper footer__wrapper--black">
+            <!-- footer -->
+            @@include('html/footer.html', {})
+        </div>
+
+    </div><!-- /.container -->
+
+    <!-- modal -->
+    <div class="modal js-modal" id="modal">
+        <div class="modal-main">
+            <img class="modal-img" src="images/pages/modal-01.jpg">
+            <div class="modal-title">
+                Автогрейдер John Deere 672GP
+            </div>
+            <div class="modal-close js-modal-close">✕</div>
+            <div class="modal-wrap">
+                <div class="modal-subtitle">
+                    Основные характеристики
+                </div>
+                <div class="modal-item">
+                    <span>Длина</span><span>...</span><span>10 200 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Ширина</span><span>...</span><span>2 500 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>База</span><span>...</span><span>5 950 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Колея</span><span>...</span><span>2 000 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Высота (макс.)</span><span>...</span><span>3 620 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>База</span><span>...</span><span>13,9 т</span> 
+                </div>
+                <div class="modal-subtitle">
+                    Машина снабжена грейдерным и бульдозерным отвалами
+                </div>
+                <div class="modal-item">
+                    <span>Угол среза откоса</span><span>...</span><span>90 градусов</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Поворот отвала</span><span>...</span><span>360 градусов</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Опускание ниже опоры</span><span>...</span><span>не менее 350 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Высота подъема отвала</span><span>...</span><span>350 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Длина бульдозерного отвала</span><span>...</span><span>2500/3000 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Тип</span><span>...</span><span>неповоротный/поворотный</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Высота с ножом</span><span>...</span><span>860 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Опускание ниже опоры</span><span>...</span><span>не менее 50 мм</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Угол резания</span><span>...</span><span>50 градусов</span> 
+                </div>
+                <div class="modal-item">
+                    <span>Угол поворота</span><span>...</span><span>0/+/-28 градусов</span> 
+                </div>
+            </div>
+        </div>
+    </div><!-- /.modal -->
+    
+</div><!-- /.objects -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
